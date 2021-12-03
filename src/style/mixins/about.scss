@@ -1,0 +1,77 @@
+.about{
+
+    h1{
+        @include heading;
+    }
+
+    .btn{
+        @include btn;
+        margin-bottom: 2rem;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap:wrap;
+        gap: 2rem;
+
+        .info-container{
+            flex: 1 1 42rem;
+
+            h2{
+                font-size: 3rem;
+                color: $white;
+                text-transform: uppercase;
+                padding-bottom: 1rem;
+            }
+
+            .box-container{
+                padding: 1rem 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+
+                .box{
+                    flex: 1 1 20rem;
+
+                    h3{
+                        font-size: 1.7rem;
+                        color: $white;
+                        padding: 1rem 0;
+                        font-weight: normal;
+
+                        span{
+                            color: $light-color;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .count-container{
+            flex: 1 1 42rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .box{
+                flex: 1 1 20rem;
+                padding: 3rem 4rem;
+                border-radius: .5rem;
+                background-color: $light-bg;
+                box-shadow: $box-shadow;
+
+                h3{
+                    font-size: 5rem;
+                    color: $crimson;
+                }
+
+                p{
+                    font-size: 1.8rem;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+
+}

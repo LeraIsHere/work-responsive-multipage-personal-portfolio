@@ -1,0 +1,83 @@
+.blog{
+    text-align: center;
+
+    h1.heading{
+        @include heading;
+    }
+
+    .btn{
+        @include btn;
+    }
+
+    .box-container{
+        @include grid(31rem);
+
+        .box{
+            text-align: cetner;
+            padding: 2rem;
+            border-radius: .5rem;
+            background: $light-bg;
+            box-shadow: $box-shadow;
+
+            .img{
+                height: 25rem;
+                width: 100%;
+                border-radius: .5rem;
+                overflow: hidden;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: .2s linear;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .content{
+
+                .icons{
+                    position: relative;
+                    top: -1rem;
+                    border-radius: .5rem;
+                    padding: 1.5rem;
+                    display: inline-block;
+                    background: $black;
+
+                    a{
+                        font-size: 1.4rem;
+                        color: $white;
+                        margin: 0 1rem;
+
+                        &:hover{
+                            color: $crimson;
+                        }
+
+                        i{
+                            padding-right: .5rem;
+                            color: $crimson;
+                        }
+                    }
+                }
+
+                h3{
+                    font-size: 2rem;
+                    color: $white;
+                    font-weight: normal;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                    color: $light-color;
+                    padding: 1rem 0;
+                    line-height: 2;
+                }
+
+            }
+        }
+    }
+
+}

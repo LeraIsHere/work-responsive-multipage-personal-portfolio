@@ -1,2 +1,12 @@
+@import "mixins/normalize";
 @import "variables";
+@import "mixins/mixins";
 @import "my";
+@import "mixins/navbar";
+@import "mixins/home";
+@import "mixins/about";
+@import "mixins/skills";
+@import "mixins/education";
+@import "mixins/portfolio";
+@import "mixins/blog";
+@import "mixins/contact";

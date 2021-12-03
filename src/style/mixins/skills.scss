@@ -1,0 +1,39 @@
+.skills{
+
+    h2.heading{
+        @include heading;
+    }
+
+    .box-container{
+        @include grid(16rem);
+
+        .box{
+            padding: 2rem;
+            text-align: center;
+            box-shadow: $box-shadow;
+            background-color: $light-bg;
+            transition: .2s linear;
+
+            &:hover{
+                background-color: $white;
+
+                h3{
+                    color: $black;
+                }
+            }
+
+            img{
+                height: 7rem;
+                margin-bottom: 1rem;
+            }
+
+            h3{
+                color: $white;
+                font-size: 1.7rem;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}
